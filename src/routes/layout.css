@@ -1,2 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import 'tailwindcss';
 
+:root {
+  --color-text: #0f0f0f;
+  --color-bg: #fff;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
+  font-family: 'Quicksand', sans-serif;
+}

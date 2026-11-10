@@ -1,0 +1,33 @@
+<script lang="ts">
+  let { src, alt, top, left, defaultColor } = $props();
+</script>
+
+<div
+  style={`top: ${top}; left: ${left}; --bg-color: ${defaultColor};`}
+  class="absolute rounded-md overflow-hidden z-5"
+  id="image-container"
+>
+  <img {src} {alt} class="object-cover z-0" />
+</div>
+
+<style>
+  #image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+  }
+
+  #image-container:hover {
+    z-index: 10;
+  }
+
+  #image-container:hover::after {
+    background-color: transparent;
+  }
+</style>
