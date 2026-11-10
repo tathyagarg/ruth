@@ -45,7 +45,7 @@
   <div class="relative w-[150vw] h-[150vh]" id="gallery">
     <Image
       src="https://picsum.photos/200/300"
-      alt="Image 1"
+      alt="hello"
       top="25%"
       left="50%"
       defaultColor="#DEC3B3"

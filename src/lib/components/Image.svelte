@@ -2,13 +2,15 @@
   let { src, alt, top, left, defaultColor } = $props();
 </script>
 
-<div
-  style={`top: ${top}; left: ${left}; --bg-color: ${defaultColor};`}
-  class="absolute rounded-md overflow-hidden z-5"
-  id="image-container"
->
-  <img {src} {alt} class="object-cover z-0" />
-</div>
+<a href={`/${alt}`}>
+  <div
+    style={`top: ${top}; left: ${left}; --bg-color: ${defaultColor};`}
+    class="absolute rounded-md overflow-hidden z-5"
+    id="image-container"
+  >
+    <img {src} {alt} class="object-cover z-0" />
+  </div>
+</a>
 
 <style>
   #image-container::after {

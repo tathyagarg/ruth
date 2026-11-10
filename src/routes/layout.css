@@ -4,6 +4,7 @@
 :root {
   --color-text: #0f0f0f;
   --color-bg: #fff;
+  --font-serif: 'Times New Roman', serif;
 }
 
 html, body {
