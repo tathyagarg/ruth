@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          BASE_PATH: /ruthard
+          BASE_PATH: ''
 
       - name: Upload build
         uses: actions/upload-pages-artifact@v3
