@@ -44,31 +44,39 @@
   </div>
   <div class="relative w-[150vw] h-[150vh]" id="gallery">
     <Image
-      src="https://picsum.photos/200/300"
-      alt="hello"
+      src="/images/ruhi.jpeg"
+      alt="ruhi"
       top="25%"
       left="50%"
+      width="450px"
+      height="300px"
       defaultColor="#DEC3B3"
     />
     <Image
-      src="https://picsum.photos/300/400"
-      alt="Image 2"
+      src="/images/church.jpeg"
+      alt="church"
       top="50%"
       left="25%"
+      width="180px"
+      height="300px"
       defaultColor="#D2DCE4"
     />
     <Image
-      src="https://picsum.photos/400/500"
-      alt="Image 3"
-      top="0%"
+      src="/images/tote.jpeg"
+      alt="tote"
+      top="5%"
       left="75%"
+      width="300px"
+      height="400px"
       defaultColor="#E7EBEE"
     />
     <Image
-      src="https://picsum.photos/300/200"
-      alt="Image 4"
+      src="/images/macdemarco.jpeg"
+      alt="macdemarco"
       top="60%"
-      left="10%"
+      left="7.5%"
+      width="350px"
+      height="500px"
       defaultColor="#E5D6CE"
     />
     <Image

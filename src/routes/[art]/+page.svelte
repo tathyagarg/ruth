@@ -19,11 +19,13 @@
     </header>
 
     <article>
-      <figure class="group relative mb-8 overflow-hidden bg-neutral-200">
+      <figure
+        class="group relative mb-8 overflow-hidden flex items-center justify-center rounded-md bg-neutral-100"
+      >
         <img
           {src}
           alt={description}
-          class="max-h-[50vh] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+          class="max-h-[50vh] transition-transform duration-700 ease-out group-hover:scale-[1.02]"
         />
       </figure>
 

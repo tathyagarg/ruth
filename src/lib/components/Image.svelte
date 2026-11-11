@@ -1,5 +1,13 @@
 <script lang="ts">
-  let { src, alt, top, left, defaultColor } = $props();
+  let {
+    src,
+    alt,
+    top,
+    left,
+    width = "100%",
+    height = "100%",
+    defaultColor,
+  } = $props();
 </script>
 
 <a href={`/${alt}`}>
@@ -8,7 +16,7 @@
     class="absolute rounded-md overflow-hidden z-5"
     id="image-container"
   >
-    <img {src} {alt} class="object-cover z-0" />
+    <img {src} {alt} {width} {height} class="object-cover z-0" />
   </div>
 </a>
 
