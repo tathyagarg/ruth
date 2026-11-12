@@ -19,5 +19,10 @@ export const ArtData = {
     title: "Mac DeMarco",
     description: "Mac DeMarco bs",
     src: "/images/macdemarco.jpeg",
-  }
+  },
+  shoes: {
+    title: "Shoes",
+    description: "Shoes bs",
+    src: "/images/shoes.jpeg",
+  },
 }

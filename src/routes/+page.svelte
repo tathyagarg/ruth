@@ -80,10 +80,12 @@
       defaultColor="#E5D6CE"
     />
     <Image
-      src="https://picsum.photos/500/300"
-      alt="Image 5"
+      src="images/shoes.jpeg"
+      alt="shoes"
       top="60%"
       left="60%"
+      width="400px"
+      height="400px"
       defaultColor="#F8F2EF"
     />
     <Image
