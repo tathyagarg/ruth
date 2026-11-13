@@ -28,7 +28,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--bg-color);
     transition: background-color 0.3s ease;
     z-index: 1;
   }
