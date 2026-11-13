@@ -13,7 +13,7 @@
 <a href={`/${alt}`}>
   <div
     style={`top: ${top}; left: ${left}; --bg-color: ${defaultColor};`}
-    class="absolute rounded-md overflow-hidden z-5"
+    class="absolute rounded-md overflow-hidden z-5 border-1 border-black/15"
     id="image-container"
   >
     <img {src} {alt} {width} {height} class="object-cover z-0" />
