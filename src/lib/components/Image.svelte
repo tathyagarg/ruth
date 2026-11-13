@@ -10,7 +10,7 @@
   } = $props();
 </script>
 
-<a href={`/${alt}`}>
+<a href={`/art/${alt}`}>
   <div
     style={`top: ${top}; left: ${left}; --bg-color: ${defaultColor};`}
     class="absolute rounded-md overflow-hidden z-5 border-1 border-black/15"

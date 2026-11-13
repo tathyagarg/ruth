@@ -52,105 +52,8 @@
   <meta name="description" content="Ruth's portfolio" />
 </svelte:head>
 
-<div class="relative w-screen h-screen overflow-x-hidden overflow-y-hidden">
-  <div
-    class="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center"
-  >
-    <h1 class="text-8xl font-bold">ruth's portfolio</h1>
-    <p class="text-2xl">FUCK YOU RUTH</p>
-  </div>
+<div class="relative w-screen h-screen overflow-hidden" id="container">
   <div class="relative w-[150vw] h-[150vh]" id="gallery">
-    <!--
-    <Image
-      src="/images/ruhi.jpeg"
-      alt="ruhi"
-      top="25%"
-      left="50%"
-      width="450px"
-      height="300px"
-      defaultColor={color(0)}
-    />
-    <Image
-      src="/images/church.jpeg"
-      alt="church"
-      top="50%"
-      left="25%"
-      width="180px"
-      height="300px"
-      defaultColor={color(1)}
-    />
-    <Image
-      src="/images/tote.jpeg"
-      alt="tote"
-      top="5%"
-      left="75%"
-      width="300px"
-      height="400px"
-      defaultColor={color(2)}
-    />
-    <Image
-      src="/images/macdemarco.jpeg"
-      alt="macdemarco"
-      top="60%"
-      left="7.5%"
-      width="350px"
-      height="500px"
-      defaultColor={color(3)}
-    />
-    <Image
-      src="images/shoes.jpeg"
-      alt="shoes"
-      top="60%"
-      left="60%"
-      width="400px"
-      height="400px"
-      defaultColor={color(4)}
-    />
-    <Image
-      src="/images/minis.jpeg"
-      alt="minis"
-      top="10%"
-      left="20%"
-      width="300px"
-      height="300px"
-      defaultColor={color(5)}
-    />
-    <Image
-      src="/images/tyler.jpeg"
-      alt="tyler"
-      top="70%"
-      left="40%"
-      width="300px"
-      height="400px"
-      defaultColor={color(6)}
-    />
-    <Image
-      src="/images/frog.jpeg"
-      alt="frog"
-      top="22%"
-      left="37%"
-      width="200px"
-      height="115px"
-      defaultColor={color(7)}
-    />
-    <Image
-      src="/images/arcane.jpeg"
-      alt="arcane"
-      top="35%"
-      left="10%"
-      width="300px"
-      defaultColor={color(8)}
-    />
-    <Image
-      src="/images/girls.jpeg"
-      alt="girls"
-      top="8%"
-      left="5%"
-      width="300px"
-      height="400px"
-      defaultColor={color(9)}
-    />
-    -->
     <Image
       src="/images/retrospection.jpeg"
       alt="retrospection"
@@ -160,14 +63,16 @@
       height="300px"
       defaultColor={color(0)}
     />
+
     <Image
       src="/images/kathakali.jpeg"
       alt="kathakali"
-      top="32%"
+      top="42%"
       left="8%"
       width="250px"
       defaultColor={color(1)}
     />
+
     <Image
       src="/images/emotion_wheel.jpeg"
       alt="emotion_wheel"
@@ -177,6 +82,7 @@
       height="300px"
       defaultColor={color(2)}
     />
+
     <Image
       src="/images/macdemarco.jpeg"
       alt="macdemarco"
@@ -186,8 +92,9 @@
       height="500px"
       defaultColor={color(3)}
     />
+
     <Image
-      src="images/shoes.jpeg"
+      src="/images/shoes.jpeg"
       alt="shoes"
       top="70%"
       left="62%"
@@ -195,6 +102,7 @@
       height="400px"
       defaultColor={color(4)}
     />
+
     <Image
       src="/images/minis.jpeg"
       alt="minis"
@@ -204,6 +112,7 @@
       height="300px"
       defaultColor={color(5)}
     />
+
     <Image
       src="/images/tyler.jpeg"
       alt="tyler"
@@ -213,6 +122,7 @@
       height="400px"
       defaultColor={color(6)}
     />
+
     <Image
       src="/images/frog.jpeg"
       alt="frog"
@@ -222,6 +132,7 @@
       height="115px"
       defaultColor={color(7)}
     />
+
     <Image
       src="/images/arcane.jpeg"
       alt="arcane"
@@ -230,6 +141,7 @@
       width="300px"
       defaultColor={color(8)}
     />
+
     <Image
       src="/images/girls.jpeg"
       alt="girls"
@@ -239,34 +151,46 @@
       height="400px"
       defaultColor={color(9)}
     />
+
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+             z-20 flex flex-col items-center gap-6
+             bg-[#F8F2EF]/90 backdrop-blur-xl
+             border border-black/10 rounded-sm
+             px-12 py-10"
+    >
+      <div class="text-center">
+        <h1 class="text-5xl font-semibold">ruth's portfolio</h1>
+        <p>i do art :)</p>
+      </div>
+
+      <a href="/about" class="font-sans text-xs underline"> about </a>
+    </div>
   </div>
 </div>
 
 <style>
-  #gallery {
-    position: relative;
-    isolation: isolate;
-  }
-
-  #gallery::before {
+  #container::before {
     content: "";
     position: absolute;
     inset: 0;
     pointer-events: none;
-    z-index: 1;
+    opacity: 0.12;
 
-    backdrop-filter: blur(10px);
-    mask-image: radial-gradient(circle at center, transparent 0%, black 30%);
-  }
-
-  #gallery::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 2;
-
-    backdrop-filter: blur(12px);
-    mask-image: radial-gradient(circle at center, transparent 40%, black 60%);
+    --color: rgba(0, 60, 100, 0.1);
+    background-image: repeating-linear-gradient(
+        to bottom,
+        var(--color) 0px,
+        var(--color) 20px,
+        transparent 21px,
+        transparent 40px
+      ),
+      repeating-linear-gradient(
+        to right,
+        var(--color) 0px,
+        var(--color) 20px,
+        transparent 21px,
+        transparent 40px
+      );
   }
 </style>
