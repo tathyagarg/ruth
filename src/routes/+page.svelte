@@ -161,7 +161,7 @@
     >
       <div class="text-center">
         <h1 class="text-5xl font-semibold">ruth's portfolio</h1>
-        <p>i do art :)</p>
+        <p>(the site is a work in progress)</p>
       </div>
 
       <a href="/about" class="font-sans text-xs underline"> about </a>
