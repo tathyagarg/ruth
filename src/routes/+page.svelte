@@ -157,7 +157,7 @@
              z-20 flex flex-col items-center gap-6
              bg-[#F8F2EF]/90 backdrop-blur-xl
              border border-black/10 rounded-sm
-             px-12 py-10"
+             px-12 py-10 shadow-md"
     >
       <div class="text-center">
         <h1 class="text-5xl font-semibold">ruth's portfolio</h1>
